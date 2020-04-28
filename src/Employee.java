@@ -20,4 +20,11 @@ class Employee extends Person {
                 getAddress().getFullInfo() +
                 ", wypłata: " + salary;
     }
+
+    @Override
+    public String printInfo() {
+        return super.printInfo() + "" +
+                "wyplata:'" + salary + '\'' +
+                '}';
+    }
 }

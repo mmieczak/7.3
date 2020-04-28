@@ -32,4 +32,12 @@ class Person {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    public String printInfo() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address=" + address +
+                '}';
+    }
 }

@@ -20,4 +20,14 @@ class Customer extends Person {
                 getAddress().getFullInfo() +
                 ", zakupy na kwotę: " + totalPayments;
     }
+
+    @Override
+    public String printInfo() {
+        return "Person{" +
+                "firstName='" + super.getFirstName() + '\'' +
+                ", lastName='" + super.getLastName() + '\'' +
+                ", address=" + super.getAddress().getFullInfo() +
+                ", totalPayments=" + getTotalPayments() +
+                '}';
+    }
 }
